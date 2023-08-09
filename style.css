@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    background: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.all {
+    background-color: var(--Very-pale-blue);
+    width: 370px;
+    height: 570px;
+    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    position: relative;
+}
+
+.image img {
+    width: 370px;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 25px;
+    font-size: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    margin-top: 25px;
+    margin-left: 40px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--Desaturated-blue);
+}
+
+.payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.payment span {
+    color: var(--Desaturated-blue);
+}
+
+.btn-proceed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#btn_one {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+}
+
+#btn_two {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+}
+
+#btn_one:hover{
+    background-color: #b274f8;
+}
+
+#btn_two:hover {
+    color: black;
+}
